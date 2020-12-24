@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Adriana Bernal</title>
+  <link rel="icon" type="image/jpg" href="imagenes/logo Adri.jpg"/>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@400;800&family=Source+Sans+Pro&display=swap" rel="stylesheet">"
+  <link rel="stylesheet" href="css/estilos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="container">
+    <i class="icon-menu burger-button" id="burger-menu">
+    </i>
+    <header class="header">
+    <figure class="logo">
+        <img src="imagenes/logo Adri completo.jpg." height="35"  -->
+      </figure> 
+      <nav class="menu is-active">
+      <ol>
+        <li>
+          <a class="link" href="#Portafolio">Portafolio</a>
+        </li>
+        <li>
+          <a class="link" href="#Eventos"> Experiencia</a>
+        </li>
+        <li>
+          <a class="link" href="#Contacto">Trabajemos juntos</a>
+        </li>
+      </ol>
+    </nav>
+    </div> 
+  </header>
+    <div class="container">
+      <section class="hero">
+      <h1> Hola! Soy <strong>Adriana Bernal</strong><br>
+      Comunicadora Social <strong>Periodista</strong><br>
+      especializada en <strong>Televisión documental</strong>
+      </h1>
+      <img class="hero-image" src="imagenes/istockphoto-1187536032-170667a.jpg"width="400" height="200"
+      alt="imagen principal del sitio"/>
+    </section>
+    </div>
+  <div class="container">
+  <section id="Portafolio" class="portfolio">
+    <h2>Portafolio </h2>  
+      <article class="project">
+      <div class="flexbox">
+        <div class="box">
+          <div class="box-video"> 
+          <h3 class="project-title">Videos</h3>
+        </div>
+       </div>
+       <div class="box">
+        <div class="box-blog">
+        <h3 class="project-title">Copywriter</h3>
+      </div>
+        </div>
+        <div class="box">
+        <div class="box-photo">
+        <h3 class="project-title">Páginas web</h3>
+      </div>  
+      </div>
+      <div class="box">
+        <div class="box-facebook">
+          <h3 class="project-title">Community Manager</h3>
+        </div>
+          </div>
+      </div>
+      </article>
+    </section>
+  </div>
+ <div class="container">
+    <h2 class="event-list-title"> Más sobre mi experiencia</h2>
+  <section id="Eventos"class="event-list">
+      <article class="event">
+          <figure class= event-imageContainer>
+          <img class="event-image"src="imagenes/038.jpg"width=200>
+          </figure>
+            <div class="event-detail">
+              <h3 class="event-title">Creación de la Fundación Voces Escritas</h3>
+                <p class="event-description">Con el obejetivo de acercar a la gente a la literatura  
+                    escritura de una forma amena y divertida.
+                </p>
+                  <a class="event-url"href="https://www.youtube.com/watch?v=BIS7cWGgJg0"target="_blanck">Ver Plática</a>
+            </div>
+        </article>
+        <article class="event">
+          <figure class= event-imageContainer>
+                 <img class="event-image"src="imagenes/imagen8.jpg"width=200/>
+          </figure>
+            <div class="event-detail">
+              <h3 class="event-title">Experiencias de marca</h3>
+                <p class="event-description"> El montaje, creación y adecuación de experiencias para crear 
+                  pertenencia, trabajo en equipo y competitividad dentro de las empresas.
+                </p>
+                  <a class="event-url"href="https://www.youtube.com/watch?v=BIS7cWGgJg0"target="_blanck">Ver Plática</a>
+           </div>
+        </article>
+      </div>
+  </section> 
+  <div class="container">
+   <section id="Contacto" class="contact">
+    <h3>¿Creamos algo juntos?</h3>
+    <form action="/suscripcion/" class="form-email"> 
+    <input type="text" placeholder="Déjame tu email" id="email">
+    <button>enviar</button>
+    </form>
+    <div class="social">
+      <a href="https://twiter.com/leonidasesteban"class="social-link twitter"></a>
+      <a href="https://facebook.com/adrianabernal"class="social-link facebook"></a>
+      <a href="https://github.com/leonidasesteban"class="social-link github"></a>
+      <a href="https://instagram.com/adrianabernal"class="social-link instagram"></a>
+    </div>
+  </div>
+  </section> 
+  <div class="container">
+    <footer class="footer">
+      <div>
+        <p>Curso de desarrollo web 2018 <img src="imagenes/Platzi.png" width="80px">
+         </p>
+        </div>
+        <div>
+         <p>design with <\3 by <a href="https://twitter.com/thespianartist">@thespianartist
+        </p>
+        </div>
+    </footer>
+  <script>
+    const menu = document.querySelector ('.menu');
+    console.log (menu);
+    const burgerbutton=document.querySelector ('#burger-menu');
+    console.log (burgerbutton);
+    burgerbutton.addEventListener ('click', hideshow);
+    function hideshow (){
+      if (menu.classList.contains('is-active')){
+      menu.classList.remove ('is-active');
+      } else {
+        menu.classList.add ('is-active');
+      }  
+    }
+  </script>
+  </div>
+ </body>
+</html>
